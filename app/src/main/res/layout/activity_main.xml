@@ -9,11 +9,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/edit_message"
         android:hint="@string/edit_message"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:editable="false"
+        android:foreground="#583f70"
+        android:autoText="false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_send"
-        android:id="@+id/button" />
+        android:id="@+id/button"
+        android:onClick="sendMessage" />
 </LinearLayout>
